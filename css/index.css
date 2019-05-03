@@ -173,7 +173,7 @@ img {
 .nav {
   display: flex;
   justify-content: space-between;
-  margin: 30px;
+  margin: 30px 0;
   align-items: center;
   margin-bottom: 4rem;
 }
@@ -185,9 +185,16 @@ img {
 }
 .nav a {
   text-decoration: none;
-  margin-right: 3rem;
+  margin-right: 1rem;
   font-size: 2rem;
   color: black;
+}
+@media (max-width:500px) {
+}
+.nav nav {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
 }
 .footer {
   width: 100%;
@@ -302,8 +309,14 @@ img {
     justify-content: center;
   }
 }
-.content-pick .destination .btn {
-  width: 200px;
-  background-color: blue;
-  color: white;
+.content-pick .destination button {
+  display: block;
+  background-color: #FFBF27;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 20rem;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: black;
 }
